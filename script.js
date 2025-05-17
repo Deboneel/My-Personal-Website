@@ -106,7 +106,24 @@ function showContent(type) {
         contentDiv.innerHTML = `<h3>Explore World</h3>
             <p>01. Bandarban</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sI4H8Fnn4dw?si=1S1tgsncE21HqR1H" allowfullscreen></iframe>
-            <p class='bangla'>পৃথিবী সংস্কৃতি, প্রকৃতি এবং ইতিহাসের অসংখ্য সুতোয় বোনা একটি গালিচা...</p>`;
+            <p class='bangla'>পৃথিবী সংস্কৃতি, প্রকৃতি এবং ইতিহাসের অসংখ্য সুতোয় বোনা একটি গালিচা...</p>
+
+            <p>02. Cox's  Bazar</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YPxfs_hYOnw" allowfullscreen></iframe>
+            <p class='bangla'>নীল জলরাশি আর সোনালি বালির মায়ায় মোড়ানো কক্সবাজার যেন বাংলাদেশের এক স্বপ্নঘেরা সমুদ্রকাব্য।</p>
+
+
+            <p>03. Sylhet</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eIKXxe2DqK0" allowfullscreen></iframe>
+            <p class='bangla'>সবুজ পাহাড় আর চা-বাগানের শহর সিলেট প্রকৃতির মায়াবী এক কোণ।
+</p>
+
+
+            <p>04. Nikli</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hQJdka1r6DE" allowfullscreen></iframe>
+            <p class='bangla'>নিকলী হাওর—জলের আয়নায় ভেসে থাকা আকাশ আর শান্ত প্রকৃতির নির্জন স্বর্গ।
+</p>`;
     } else if (type === "AET") {
         contentDiv.innerHTML = `<h3>Agricultural Engineering Courses</h3>
             <p><span class="link" onclick="showDriveFolder1()">Level 1 Semester 1</span></p>

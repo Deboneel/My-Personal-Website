@@ -1,0 +1,232 @@
+#navbar-iframe {
+    display: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Noto+Sans+Bengali&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    background-size: cover;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 16px;
+}
+
+.login-box input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7eb3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-box button:hover {
+    background: #ff5685;
+    transform: scale(1.05);
+}
+
+.error-message {
+    margin-top: 20px;
+    color: #ff7eb3;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    overflow-y: auto;
+    height: 80vh;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background: #ff7eb3;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background: #ff5685;
+    transform: scale(1.05);
+}
+
+#content {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.bangla {
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+.link {
+    color: #ff7eb3;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav button {
+        width: 80%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+.welcome-message {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 9999;
+    text-align: center;
+    animation: popupAnimation 0.5s ease-out forwards;
+}
+
+@keyframes popupAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.popup button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5685;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #ff7eb3;
+}
+
+
+#movie_q{
+    color: #ff0202;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.daynight{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    box-shadow: #6ab970;
+}
+
+
+
+
+#movie_description{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#movie_description_main{
+    color: #ffffff;
+    font-weight:bolder ;
+    font-size:40px;
+}

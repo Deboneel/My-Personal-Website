@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+
+    <div id="login-container" class="login-box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter your name">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="login()">Enter</button>
+        <div id="error-message" class="error-message hidden">YOU ARE NOT AUTHORIZED. TRY AGAIN LATER. THANK YOU</div>
+    </div>
+
+
+
+
+    <div id="main-container" class="hidden container">
+        <h2 class="welcome-message">Hello, <span id="user-name"></span>! Welcome to my website.</h2>
+        <nav>
+            <button onclick="showContent('movies')">Watch Movies</button>
+            <button onclick="showContent('articles')">Read Articles</button>
+            <button onclick="showContent('explore')">Explore World</button>
+            <button onclick="showContent('AET')">Agricultural Engineering & Technology</button>
+        </nav>
+
+
+        <div class="daynight">
+          <button id="day" onclick="bckgroundImaged('day')">Day</button>
+          <button id="night" onclick="bckgroundImagen('night')">Night</button>
+        </div>
+
+        <div id="content">Choose an option above to explore!</div>
+        <button onclick="logout()">Logout</button>
+
+    </div>
+
+
+
+
+    <!-- Popup for successful login -->
+    <div id="popup" class="popup">
+        <h3>Login Successful!</h3>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    
+    <script src="./JS/script.js"></script>
+</body>
+</html>
